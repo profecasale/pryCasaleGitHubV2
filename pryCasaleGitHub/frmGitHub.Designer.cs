@@ -28,18 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnNube = new Button();
             SuspendLayout();
+            // 
+            // btnNube
+            // 
+            btnNube.Location = new Point(127, 111);
+            btnNube.Name = "btnNube";
+            btnNube.Size = new Size(437, 101);
+            btnNube.TabIndex = 0;
+            btnNube.Text = "Estoy en la nube";
+            btnNube.UseVisualStyleBackColor = true;
             // 
             // frmGitHub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnNube);
             Name = "frmGitHub";
             Text = "Registro en GitHub de mi proyecto";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnNube;
     }
 }
